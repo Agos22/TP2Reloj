@@ -16,12 +16,7 @@ public class Persona {
         this.altura = altura;
         this.reloj1 = reloj1;
     }
-
    
-
-    
-       
-
     public String getNombre() {
         return nombre;
     }
