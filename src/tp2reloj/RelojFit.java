@@ -13,16 +13,26 @@ public class RelojFit extends Reloj {
         this.pasos = pasos;
     }
 
-    
+    public int getPasos() {
+        return pasos;
+    }
+
+    public void setPasos(int pasos) {
+        this.pasos = pasos;
+    }
+
+   
     public void cuentaPasos (int x, int y){
-        this.pasos += 10;    
+        System.out.println("contando pasos...");
     
 }
     public void frecuenciaaleatoria (){
-        Random r = new Random ();
-        int nuevaFrec = r.nextInt (101)+50;
-        setFrecuencia (nuevaFrec);
+        Random r = new Random();
+        int nuevaFrec = r.nextInt(101) + 50;
+        setFrecuencia(nuevaFrec);
     }
+
+    
 
    
 }

@@ -18,6 +18,8 @@ public class Reloj {
         this.frecuencia = frecuencia;
     }
 
+   
+
     public String getDia() {
         return dia;
     }
@@ -43,43 +45,17 @@ public class Reloj {
     }
     
     public void incrementarDia (){
-        String[] partes = dia.split("/");
-    int diaInt = Integer.parseInt(partes[0]);
-    int mes = Integer.parseInt(partes[1]);
-    int anio = Integer.parseInt(partes [2]);
-    
-    diaInt++;
-    if (diaInt > 30){
-    diaInt = 1;
-    mes++;
-    if (mes > 12){
-        mes = 1;
-        anio++;
-     }
-  }
-    dia = String.format("%02d/%02d/%d", diaInt, mes, anio);
-}
+    System.out.println("Dis incrementado");
+    }
+       
     
     public void incrementarHora (){
-        String[] partes = hora.split (":");
-        int horaInt = Integer.parseInt(partes [0]);
-        int minutos = Integer.parseInt(partes[1]);
-        
-        minutos++;
-        if (minutos >= 60){
-            minutos = 0;
-            horaInt ++;
-            if (horaInt <=24){
-                horaInt = 0;
-            }
-        }
-        
-        hora = String.format( " : ", horaInt, minutos); 
+       System.out.println("Hora incrementada");
     }
     
     public void limpiaPantalla (){
-        System.out.println("\"\\033[H\\033[2J\"");
-        System.out.println();
+        System.out.println("Pantalla limpia");
+        
     }
     
 }

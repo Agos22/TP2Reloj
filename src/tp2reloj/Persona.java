@@ -7,15 +7,20 @@ public class Persona {
     private String apellido;
     private int edad;
     private int altura;
-    private Reloj reloj;
+    private Reloj reloj1;
 
-    public Persona(String nombre, String apellido, int edad, int altura) {
+    public Persona(String nombre, String apellido, int edad, int altura, Reloj reloj1) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.altura = altura;
-        
+        this.reloj1 = reloj1;
     }
+
+   
+
+    
+       
 
     public String getNombre() {
         return nombre;
@@ -26,7 +31,7 @@ public class Persona {
     }
 
     public Reloj getReloj() {
-        return reloj;
+        return reloj1;
     }
 
     public void setEdad(int edad) {
@@ -34,21 +39,15 @@ public class Persona {
     }
 
     public void setReloj(Reloj reloj) {
-        this.reloj = reloj;
+        this.reloj1 = reloj;
     }
     
     public void decirHora (){
-        
+        System.out.println("la hora actual es: "+ reloj1.getHora());
     }
     
-    public void hablar (){
-        
-    }
 
-    public void comer (){
-        
-    }
-    
+   
     @Override
     public String toString (){
         return "Persona: " + "Nombre" + nombre + "Apellido" + apellido + "Edad" + edad + "Altura" + altura;
