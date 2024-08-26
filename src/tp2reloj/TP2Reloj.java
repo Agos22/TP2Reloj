@@ -20,6 +20,8 @@ public class TP2Reloj {
        UnrelojFit.cuentaPasos(10, 17);
        UnrelojFit.frecuenciaaleatoria();
        UnrelojFit.limpiaPantalla();
+       UnrelojFit.incrementarDia(10);
+       UnrelojFit.incrementarHora(5);
        
       
               
