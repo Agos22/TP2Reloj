@@ -47,4 +47,8 @@ public class Persona {
     public String toString (){
         return "Persona: " + "Nombre" + nombre + "Apellido" + apellido + "Edad" + edad + "Altura" + altura;
     }
+    public void mostrarInfo (){
+        System.out.println(" Nombre y apellido "  + nombre  + apellido);
+        System.out.println(" Edad y altura "  + edad + " años " + altura + "cm ");
+    }
 }

@@ -32,6 +32,7 @@ public class RelojFit extends Reloj {
         Random r = new Random();
         int nuevaFrec = r.nextInt(101) + 50;
         setFrecuencia(nuevaFrec);
+        System.out.println("Frecuencia " + nuevaFrec);
     }
 
 }
